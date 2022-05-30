@@ -1,11 +1,19 @@
 import React from "react"
-import Footer from "./myComponents/Footer"
+import "./App.css"
 
 function App() {
   return(
     <div>
-      <h1>Hello Again</h1>
-      <Footer />
+      <input type="checkbox" />
+      <p>Placeholder 1 here</p>
+      <input type="checkbox" />
+      <p>Placeholder text here</p>
+      <input type="checkbox" />
+      <p>Placeholder text here</p>
+      <input type="checkbox" />
+      <p>Placeholder text here</p>
+      <input type="checkbox" />
+      <p>Placeholder text here</p>
     </div>
     
   )
