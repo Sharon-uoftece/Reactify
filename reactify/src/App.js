@@ -1,26 +1,34 @@
 import React from "react"
-import ContactCard from "./ContactCard"
+import Joke from "./Joke"
 
 function App() {
-  return(
-    <div className="contacts">
-      <ContactCard 
-        name="Tuntun"
-        imgUrl="https://tse4.mm.bing.net/th?id=OIP.jhOezX7rkA2bKi-BO6PSXQHaD5&pid=Api&P=0&w=330&h=173/"
-        phone="(100) 432-3456"
+  return (
+    <div>
+      <Joke 
+        question = "What is my goal"
+        punchLine = "Young and beautiful"
       />
-     <ContactCard 
-        name="Sharon"
-        imgUrl="https://tse4.mm.bing.net/th?id=OIP.jhOezX7rkA2bKi-BO6PSXQHaD5&pid=Api&P=0&w=330&h=173/"
-        phone="(437) 999-3659"
+
+      <Joke
+        question = "What kind of lifestyle do I want"
+        punchLine = "Brave, Adventurous, passionate, always learning"
       />
-      <ContactCard 
-        name="Jackson"
-        imgUrl="https://tse4.mm.bing.net/th?id=OIP.jhOezX7rkA2bKi-BO6PSXQHaD5&pid=Api&P=0&w=330&h=173/"
-        phone="(647) 861-6876"
+
+      <Joke
+        punchLine = "Maison Margiela, Urban Outfitters"
       />
+
+      <Joke
+        question = "what am i looking for in life"      
+        punchLine = "Happiness, self elevation"
+      />
+
+      <Joke
+        question = "What is my favorite food category"
+        punchLine = "Sashimi, thai, chinese food"
+      />
+
     </div>
-    
   )
 }
 
