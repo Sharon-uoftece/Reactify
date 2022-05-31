@@ -1,33 +1,13 @@
 import React from "react"
-import Joke from "./Joke"
+import TodoItem from "./TodoItem"
+import todosData from "./todosData"
 
 function App() {
+  const todoItems = todosData.map(item => <TodoItem key={item.id} item={item}/>)
+  
   return (
-    <div>
-      <Joke 
-        question = "What is my goal"
-        punchLine = "Young and beautiful"
-      />
-
-      <Joke
-        question = "What kind of lifestyle do I want"
-        punchLine = "Brave, Adventurous, passionate, always learning"
-      />
-
-      <Joke
-        punchLine = "Maison Margiela, Urban Outfitters"
-      />
-
-      <Joke
-        question = "what am i looking for in life"      
-        punchLine = "Happiness, self elevation"
-      />
-
-      <Joke
-        question = "What is my favorite food category"
-        punchLine = "Sashimi, thai, chinese food"
-      />
-
+    <div className="todo-list">
+      {todoItems}
     </div>
   )
 }
